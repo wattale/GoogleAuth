@@ -34,7 +34,7 @@
 
     <groupId>com.warrenstrange</groupId>
     <artifactId>googleauth</artifactId>
-    <version>0.4.3</version>
+    <version>0.5.0</version>
     <packaging>bundle</packaging>
 
     <name>googleauth</name>
@@ -87,8 +87,11 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>com.warrenstrange.googleauth.*</Export-Package>
-                        <Import-Package>org.apache.http.client.utils.*;version="4.3.3",
-                            org.apache.commons.codec.*;version="1.10"</Import-Package>
+                        <Import-Package>org.apache.http.client.utils.*;version="4.3.1.wso2v2",
+                            org.apache.commons.codec.*;version="1.4.0",
+                            org.apache.commons.codec.binary.*;version="1.4.0"
+                        </Import-Package>
+                        <DynamicImport-Package>*</DynamicImport-Package>
                     </instructions>
                 </configuration>
             </plugin>
